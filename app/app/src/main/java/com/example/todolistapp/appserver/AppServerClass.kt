@@ -8,7 +8,7 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 object AppServerClass {
 
     // 실제 디바이스에서 테스트할 때, PC의 IP 주소를 사용해야 함
-    private val BASE_URL = "http://10.100.203.91:8080/todolist/"
+    private val BASE_URL = "http://10.100.203.67:8080/todolist/"
 
 
 

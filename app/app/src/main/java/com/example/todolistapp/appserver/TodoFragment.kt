@@ -23,11 +23,6 @@ class TodoFragment : Fragment(R.layout.activity_main) { // 여기서 main.xml �
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = TodoAdapter(getSampleTodoList()) // Adapter 설정 필요
 
-        // FAB 버튼 클릭 이벤트
-        fab.setOnClickListener {
-            Toast.makeText(requireContext(), "할 일 추가하기 화면으로 이동!", Toast.LENGTH_SHORT).show()
-            // 예: AddTodoFragment로 이동
-        }
     }
 
     private fun getSampleTodoList(): List<TodoDTO> {

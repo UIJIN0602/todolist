@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:orientation="vertical">
 
 
@@ -26,10 +27,15 @@
             android:hint="할 일 입력"/>
 
 
+
     </com.google.android.material.textfield.TextInputLayout>
 
-
-
+    <Button
+        android:id="@+id/btn_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8BBD0"
+        android:text="확인" />
 
 
 </LinearLayout>

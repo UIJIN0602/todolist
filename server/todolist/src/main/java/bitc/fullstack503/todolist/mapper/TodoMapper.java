@@ -16,4 +16,6 @@ public interface TodoMapper {
     List<TodoDTO> selectTodoList();
 
     void updateTodo(TodoDTO todo);
+
+    List<TodoDTO> selectCompletedTodoList();
 }

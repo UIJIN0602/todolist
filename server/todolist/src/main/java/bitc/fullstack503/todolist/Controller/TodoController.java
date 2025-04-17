@@ -27,16 +27,8 @@ public class TodoController {
     @GetMapping("/selectTodo") // 간결하게 GET 방식 지정
     public List<TodoDTO> selectTodoList() throws Exception {
 
-        List<TodoDTO> todolist=todoService.selectTodoList();
+        List<TodoDTO> todolist =todoService.selectTodoList();
         return todolist;
-    }
-
-    // 게시물 등록 화면
-    // @GetMapping : 클라이언트에서 데이터 전송 방식을 GET으로 설정한 URL만 접속
-    // @RequestMapping(method = RequestMethod.GET) 과 동일한 방식
-    @GetMapping("/insetTodo")
-    public String insertTodo(){
-        return "todo/todoList";
     }
 
     // 클라이언트가 접근하는 URL이 동일하더라도 method 타입이 다르면 서로 다른 URL로 인식하기 때문에 동일한 URL을 사용할 수 있음
@@ -44,11 +36,11 @@ public class TodoController {
     // 게시물 등록 처리
     // @PostMapping : 클라이언트에서 데이터 전송 방식을 POST로 설정한 URL만 접속
     // @RequestMapping(method = RequestMethod.POST) 과 동일한 방식
-    @PostMapping("/insetTodo")
-    public String insertTodo(TodoDTO todo) throws Exception {
+    @PostMapping("/insertTodo")
+    public String insertTodo(@RequestBody TodoDTO todo) throws Exception {
         todoService.insertTodo(todo);
 
-        return "todo/todoList";
+        return "success";
     }
 
 
@@ -70,6 +62,16 @@ public class TodoController {
         todoService.deleteTodo(todoIdx);
         return "todo/todoList";
     }
+
+    // 완료된 Todo 항목만 조회
+    @GetMapping("/selectCompletedTodo")
+    public List<TodoDTO> selectCompletedTodoList() throws Exception {
+        return todoService.selectCompletedTodoList(); // 서비스에서 완료된 항목만 조회
+    }
+
+
+
+
 
 
 }

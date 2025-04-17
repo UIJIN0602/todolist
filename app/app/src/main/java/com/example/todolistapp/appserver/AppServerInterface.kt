@@ -1,8 +1,10 @@
 package com.example.todolistapp.appserver
 
 
+import android.R
 import com.example.todolistapp.dto.TodoDTO
 import retrofit2.Call
+import retrofit2.http.Body
 import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.POST
@@ -14,10 +16,11 @@ interface AppServerInterface {
 fun selectTodo(): Call<List<TodoDTO>>
 
 
-@POST("insetTodo")
-fun insetTodo(
+@POST("insertTodo")
+fun insertTodo(@Body todoDTO: TodoDTO):Call<String>
 
-)
+    @GET("selectCompletedTodo")
+    fun selectCompletedTodo(): Call<List<TodoDTO>>
 
 @PUT("updateTodo")
 fun updateTodo(

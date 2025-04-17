@@ -5,8 +5,8 @@ import lombok.Data;
 @Data
 public class TodoDTO {
     private int todoIdx;
-    private String todoTitle;
     private String todoContent;
     private String todoWriteDate;
+    private String todoDeletedYn;
 
 }
