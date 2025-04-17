@@ -7,6 +7,6 @@ public class TodoDTO {
     private int todoIdx;
     private String todoContent;
     private String todoWriteDate;
-    private String todoDeletedYn;
+
 
 }

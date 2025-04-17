@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         loadtodolist()
 
+//        화면 전환
         binding.btnWrite.setOnClickListener {
             val intent = Intent(this, PlusActivity::class.java)
             startActivity(intent)
@@ -57,12 +58,13 @@ class MainActivity : AppCompatActivity() {
                     Log.d("csy", "result : $result")
 
                     if (result != null) {
-                        val adapter = TodoAdapter(result) { todo ->
-                            // 아이템 클릭 시 DetailActivity로 이동
-                            val intent = Intent(this, DetailActivity::class.java)
-                            intent.putExtra("todo", todo)
-                            startActivity(intent)
-                        }
+                        val adapter = TodoAdapter(result)
+                        //                        { todo ->
+//                            // 아이템 클릭 시 DetailActivity로 이동
+//                            val intent = Intent(this, DetailActivity::class.java)
+//                            intent.putExtra("todo", todo)
+//                            startActivity(intent)
+//                        }
                         // 아이템 - 어댑터 연결 - 바인딩
                         binding.recyclerviewTodo.adapter = adapter
                         binding.recyclerviewTodo.layoutManager =

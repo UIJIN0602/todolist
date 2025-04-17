@@ -38,8 +38,8 @@ public class TodoServiceImpl implements TodoService {
         todoMapper.updateTodo(todo);
     }
 
-    @Override
-    public List<TodoDTO> selectCompletedTodoList() {
-        return todoMapper.selectCompletedTodoList();
-    }
+//    @Override
+//    public List<TodoDTO> selectCompletedTodoList() {
+//        return todoMapper.selectCompletedTodoList();
+//    }
 }

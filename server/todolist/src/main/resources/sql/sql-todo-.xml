@@ -26,15 +26,14 @@
     <update id="updateTodo" parameterType="bitc.fullstack503.todolist.dto.TodoDTO">
         UPDATE todo
         SET todo_content = #{todoContent},
-        todo_deleted_yn=  #{todoDeletedYn},
         todo_write_date = #{todoWriteDate}
         WHERE todo_idx = #{todoIdx}
     </update>
 
 <!--    게시글 완료 여부-->
-    <select id="selectCompletedTodoList" resultType="bitc.fullstack503.todolist.dto.TodoDTO">
-    SELECT *
-    FROM todo
-    WHERE todo_deleted_yn =#{todoDeletedYn}
-    </select>
+<!--    <select id="selectCompletedTodoList" resultType="bitc.fullstack503.todolist.dto.TodoDTO">-->
+<!--    SELECT *-->
+<!--    FROM todo-->
+<!--    WHERE todo_deleted_yn =#{todoDeletedYn}-->
+<!--    </select>-->
 </mapper>

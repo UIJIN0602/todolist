@@ -14,8 +14,8 @@ data class TodoDTO(
     @SerializedName("todoWriteDate")
     var todoWriteDate: String = "",
 
-    @SerializedName("todoDeletedYn")
-    var todoDeletedYn: String = ""
+//    @SerializedName("todoDeletedYn")
+//    var todoDeletedYn: String = ""
 
 ) : Serializable
 

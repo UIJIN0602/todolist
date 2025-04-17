@@ -76,16 +76,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/plus" />
 
-    <Button
-        android:id="@+id/btnComplete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="완료"
-        android:backgroundTint="#F8BBD0"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        tools:layout_editor_absoluteY="61dp" />
+<!--    <Button-->
+<!--        android:id="@+id/btnComplete"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="#F8BBD0"-->
+<!--        android:text="완료"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.652"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textView3"-->
+<!--        tools:layout_editor_absoluteY="60dp" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

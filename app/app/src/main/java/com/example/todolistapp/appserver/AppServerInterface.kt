@@ -19,17 +19,18 @@ fun selectTodo(): Call<List<TodoDTO>>
 @POST("insertTodo")
 fun insertTodo(@Body todoDTO: TodoDTO):Call<String>
 
-    @GET("selectCompletedTodo")
-    fun selectCompletedTodo(): Call<List<TodoDTO>>
+
 
 @PUT("updateTodo")
-fun updateTodo(
+fun updateTodo(@Body todoDTO: TodoDTO): Call<String>
 
-)
 
 @DELETE("deleteTodo")
 fun deleteTodo(
 
 )
+
+//    @GET("selectCompletedTodo")
+//    fun selectCompletedTodo(): Call<List<TodoDTO>>
 
 }

@@ -63,11 +63,11 @@ public class TodoController {
         return "todo/todoList";
     }
 
-    // 완료된 Todo 항목만 조회
-    @GetMapping("/selectCompletedTodo")
-    public List<TodoDTO> selectCompletedTodoList() throws Exception {
-        return todoService.selectCompletedTodoList(); // 서비스에서 완료된 항목만 조회
-    }
+//    // 완료된 Todo 항목만 조회
+//    @GetMapping("/selectCompletedTodo")
+//    public List<TodoDTO> selectCompletedTodoList() throws Exception {
+//        return todoService.selectCompletedTodoList(); // 서비스에서 완료된 항목만 조회
+//    }
 
 
 

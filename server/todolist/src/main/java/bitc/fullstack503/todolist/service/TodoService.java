@@ -15,5 +15,5 @@ public interface TodoService {
 
     void updateTodo(TodoDTO todo);
 
-    List<TodoDTO> selectCompletedTodoList();
+//    List<TodoDTO> selectCompletedTodoList();
 }
